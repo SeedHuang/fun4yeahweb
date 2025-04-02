@@ -1,0 +1,130 @@
+@import 'public/css/var';
+
+.f4y {
+  &__nav {
+    background: $navBg;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    &__container {
+      margin: 0 auto;
+      width: $pageContentWidth;
+      background: $navCongainerBg;
+
+      &__logobar {
+        position: relative;
+        height: 80px;
+        margin: 0 auto;
+        width: $pageContentWidth;
+        &__logo {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          height: 30px;
+          width: 156px;
+        }
+      }
+      &__menu {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: $pageContentWidth;
+        &__item {
+          height: 60px;
+          display: flex;
+          padding: 0 30px;
+          align-items: center;
+          color: $menuItemColor;
+          background: $menuItemBgColor;
+          font-family: $fontFamily;
+          font-size: $fontSizeM;
+          cursor: pointer;
+          user-select: none;
+          transition:
+            color 0.3s ease-in-out,
+            background 0.3s ease-in-out;
+
+          a {
+            color: $menuItemColor;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background: $menuItemHoverBgColor;
+            color: $menuItemHoverColor;
+            a {
+              color: $menuItemHoverColor;
+            }
+          }
+
+          &--selected {
+            background: $menuItemSelectedBgColor;
+            color: $menuItemSelectedColor;
+          }
+        }
+      }
+    }
+  }
+
+  &__body__scroll {
+    position: fixed;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  &__footer {
+    height: 760px;
+    background: #2c2e2d;
+
+    &__container {
+      width: 1280px;
+      height: 760px;
+      margin: 0 auto;
+      background: #2c2e2d;
+      position: relative;
+      &__logo {
+        position: absolute;
+        left: 0;
+        top: 119px;
+        width: 156px;
+        height: 30px;
+      }
+
+      &__links {
+        height: 500px;
+        position: absolute;
+        width: 760px;
+        display: flex;
+        flex-direction: row;
+        left: 380px;
+        top: 119px;
+        &__item {
+          flex-grow: 1;
+          h3 {
+            font-size: 18px;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 20px;
+          }
+          &__row {
+            color: #fff;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

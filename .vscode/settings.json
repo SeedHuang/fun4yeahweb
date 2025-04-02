@@ -1,0 +1,43 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2, // 设置缩进为 2 个空格
+  "editor.insertSpaces": true, // 使用空格代替 Tab
+  "editor.detectIndentation": false, // 禁用自动检测文件的缩进
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "[javacript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javacriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
+  "terminal.integrated.shellArgs.windows": ["--login", "-i"],
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.splitCwd": "workspaceRoot",
+  "terminal.integrated.defaultLocation": "editor",
+  "workbench.startupEditor": "none",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.action.terminal.toggleTerminal": true,
+  "workbench.action.terminal.focus": true
+}
