@@ -1,41 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+npm install -g pm2
 
-## Getting Started
+### 启动
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+pm2 start ecosystem.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.    
+### 停止
 
+```
+pm2 stop fun4yeah
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 关闭所有
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+pm2 delete fun4yeah
+```
 
-## Learn More
+### nginx启动
 
-To learn more about Next.js, take a look at the following resources:
+```
+## 以管理员身份打开powershell
+start nginx
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 查看nginx是否在运行
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+tasklist /fi "imagename eq nginx.exe"
+```
 
-## Deploy on Vercel
+### 关闭nginx所有 任务
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-npm install -g pm2
-pm2 start npm --name "next-app" -- start
+```
+taskkill /f /im nginx.exe
+```
