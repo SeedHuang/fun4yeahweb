@@ -1,12 +1,19 @@
 /**
  * @description: Banner Item
  */
+import Image from 'next/image';
+
 interface IBannerItemProps {
   /**
    * @description: 图片地址
    * @type {string}
    */
   src: string;
+  /**
+   * @description: 图片标题
+   * @type {string}
+   */
+  title?: string;
 }
 
 /**
@@ -15,10 +22,18 @@ interface IBannerItemProps {
  */
 export const Item: React.FC<IBannerItemProps> = ({
   src,
+  title,
 }): React.ReactElement => {
   return (
     <div className="f4y__banner__item">
-      <img className="f4y__banner__item__img" src={src}></img>
+      <Image
+        src={src}
+        alt={title || 'Banner image'}
+        width={500}
+        height={300}
+        className="banner-image"
+        priority
+      />
     </div>
   );
 };

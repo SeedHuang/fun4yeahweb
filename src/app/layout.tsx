@@ -1,5 +1,6 @@
 import Menu from '@components/menu';
 import { type Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
 import './layout.scss';
@@ -20,10 +21,12 @@ export default function RootLayout({
         <header className="f4y__nav">
           <div className="f4y__nav__container">
             <div className="f4y__nav__container__logobar">
-              <img
+              <Image
                 className="f4y__nav__container__logobar__logo"
                 src="/images/logo.png"
-                alt="logo"
+                alt="Logo"
+                width={150}
+                height={50}
               />
             </div>
             <Menu />
@@ -33,10 +36,12 @@ export default function RootLayout({
           {children}
           <footer className="f4y__footer">
             <div className="f4y__footer__container">
-              <img
+              <Image
                 className="f4y__footer__container__logo"
                 src="/images/logo.png"
-                alt="logo"
+                alt="Logo"
+                width={150}
+                height={50}
               />
               <div className="f4y__footer__container__links">
                 <div className="f4y__footer__container__links__item">

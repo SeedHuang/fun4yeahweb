@@ -1,4 +1,4 @@
-@import 'public/css/var';
+@use 'public/css/var' as *;
 @font-face {
   font-family: 'JAVATA'; // 自定义字体名称
   src:

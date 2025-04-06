@@ -26,7 +26,7 @@ export const Banner: React.FC<IBannerProps> = ({
   srcs,
 }): React.ReactElement => {
   const [currentIndex, setCurrentIndex] = useState(0); // 当前幻灯片索引
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: { realIndex: number }) => {
     setCurrentIndex(swiper.realIndex); // 更新当前幻灯片索引
   };
   return (

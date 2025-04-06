@@ -1,9 +1,9 @@
 import Banner from '@components/banner';
-import React from 'react';
+import Image from 'next/image';
 import './page.scss';
 // import { Switch, NavBar, Checkbox, Radio, Input } from "antd-mobile";
 
-export default function Home({ children }: { children: React.ReactNode }) {
+export default function Home() {
   const srcs = [
     '/images/poster1.png',
     '/images/poster2.jpg',
@@ -54,7 +54,13 @@ export default function Home({ children }: { children: React.ReactNode }) {
           <div className="f4y__home__team__board__members">
             <div className="f4y__home__team__board__members__person">
               <div className="f4y__home__team__board__members__person__avator">
-                <img src="/images/e1.png" alt="designer" />
+                <Image
+                  src="/images/e1.png"
+                  alt="designer"
+                  width={100}
+                  height={100}
+                  quality={100}
+                />
               </div>
               <div className="f4y__home__team__board__members__person__position">
                 <div className="f4y__home__team__board__members__person__position__c"></div>
@@ -65,7 +71,13 @@ export default function Home({ children }: { children: React.ReactNode }) {
             </div>
             <div className="f4y__home__team__board__members__person">
               <div className="f4y__home__team__board__members__person__avator">
-                <img src="/images/e2.png" alt="developer" />
+                <Image
+                  src="/images/e2.png"
+                  alt="developer"
+                  width={100}
+                  height={100}
+                  quality={100}
+                />
               </div>
               <div className="f4y__home__team__board__members__person__position">
                 <div className="f4y__home__team__board__members__person__position__c"></div>
@@ -76,7 +88,13 @@ export default function Home({ children }: { children: React.ReactNode }) {
             </div>
             <div className="f4y__home__team__board__members__person">
               <div className="f4y__home__team__board__members__person__avator">
-                <img src="/images/e3.png" alt="band" />
+                <Image
+                  src="/images/e3.png"
+                  alt="band"
+                  width={100}
+                  height={100}
+                  quality={100}
+                />
               </div>
               <div className="f4y__home__team__board__members__person__position">
                 <div className="f4y__home__team__board__members__person__position__c"></div>
@@ -87,7 +105,13 @@ export default function Home({ children }: { children: React.ReactNode }) {
             </div>
             <div className="f4y__home__team__board__members__person">
               <div className="f4y__home__team__board__members__person__avator">
-                <img src="/images/e4.png" alt="planning" />
+                <Image
+                  src="/images/e4.png"
+                  alt="planning"
+                  width={100}
+                  height={100}
+                  quality={100}
+                />
               </div>
               <div className="f4y__home__team__board__members__person__position">
                 <div className="f4y__home__team__board__members__person__position__c"></div>
@@ -111,16 +135,40 @@ export default function Home({ children }: { children: React.ReactNode }) {
         <h2 className="f4y__home__lab__subtitle">设计故事于作品展示</h2>
         <div className="f4y__home__lab__items">
           <div className="f4y__home__items__item">
-            <img src="/images/d1.png" alt="设计故事与作品展示MOMO" />
+            <Image
+              src="/images/d1.png"
+              alt="设计故事与作品展示MOMO"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__items__item">
-            <img src="/images/d2.png" alt="设计故事与作品展示SWEET7" />
+            <Image
+              src="/images/d2.png"
+              alt="设计故事与作品展示SWEET7"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__items__item">
-            <img src="/images/d3.png" alt="设计故事与作品展示FROG" />
+            <Image
+              src="/images/d3.png"
+              alt="设计故事与作品展示FROG"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__items__item">
-            <img src="/images/d4.png" alt="设计故事与作品展示LOOKUP" />
+            <Image
+              src="/images/d4.png"
+              alt="设计故事与作品展示LOOKUP"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
         </div>
       </div>
@@ -129,19 +177,49 @@ export default function Home({ children }: { children: React.ReactNode }) {
         <h2 className="f4y__home__library__subtitle">开放合作资源</h2>
         <div className="f4y__home__library__items">
           <div className="f4y__home__library__items__item">
-            <img src="/images/l1.png" alt="IP LIBRARY" />
+            <Image
+              src="/images/l1.png"
+              alt="IP LIBRARY"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__library__items__item">
-            <img src="/images/l2.png" alt="IP LIBRARY" />
+            <Image
+              src="/images/l2.png"
+              alt="IP LIBRARY"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__library__items__item">
-            <img src="/images/l3.png" alt="IP LIBRARY" />
+            <Image
+              src="/images/l3.png"
+              alt="IP LIBRARY"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__library__items__item">
-            <img src="/images/l4.png" alt="IP LIBRARY" />
+            <Image
+              src="/images/l4.png"
+              alt="IP LIBRARY"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
           <div className="f4y__home__library__items__item">
-            <img src="/images/l5.png" alt="IP LIBRARY" />
+            <Image
+              src="/images/l5.png"
+              alt="IP LIBRARY"
+              width={300}
+              height={200}
+              quality={100}
+            />
           </div>
         </div>
         <div className="f4y__home__library__more">了解更多行业</div>
