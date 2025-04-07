@@ -36,7 +36,7 @@
           height: 60px;
           display: flex;
           padding: 0 30px;
-          align-items: center;
+          align-items: stretch;
           color: $menuItemColor;
           background: $menuItemBgColor;
           font-family: $fontFamily;
@@ -50,19 +50,22 @@
           a {
             color: $menuItemColor;
             text-decoration: none;
+            align-items: center;
+            display: flex;
           }
 
           &:hover {
-            background: $menuItemHoverBgColor;
-            color: $menuItemHoverColor;
             a {
-              color: $menuItemHoverColor;
+              color: $menuItemHoverBgColor;
             }
           }
 
           &--selected {
             background: $menuItemSelectedBgColor;
-            color: $menuItemSelectedColor;
+            color: #000;
+            a {
+              color: #000;
+            }
           }
         }
       }
@@ -89,6 +92,49 @@
       margin: 0 auto;
       background: #2c2e2d;
       position: relative;
+
+      &__location {
+        width: 760px;
+        height: 265px;
+        position: absolute;
+        left: 381px;
+        top: 354px;
+        background: #fff;
+
+        &__contactus {
+          position: absolute;
+          left: 386px;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 374px;
+
+          &__title {
+            position: absolute;
+            top: 44px;
+            left: 66px;
+            font-family: $fontFamily;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            font-weight: 700;
+            color: #1a1a1a;
+          }
+
+          &__row {
+            display: flex;
+            height: 14px;
+            position: absolute;
+            left: 66px;
+            right: 0;
+            font-size: 12px;
+            top: 97px;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+
       &__logo {
         position: absolute;
         left: 0;
@@ -116,8 +162,10 @@
           &__row {
             color: #fff;
             font-size: 14px;
-            line-height: 20px;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             a {
               color: #fff;
               text-decoration: none;

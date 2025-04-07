@@ -29,8 +29,8 @@ export const Item: React.FC<IBannerItemProps> = ({
       <Image
         src={src}
         alt={title || 'Banner image'}
-        width={500}
-        height={300}
+        width={1920}
+        height={800}
         className="banner-image"
         priority
       />

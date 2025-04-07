@@ -57,8 +57,8 @@ export default function Home() {
                 <Image
                   src="/images/e1.png"
                   alt="designer"
-                  width={100}
-                  height={100}
+                  width={130}
+                  height={130}
                   quality={100}
                 />
               </div>
@@ -74,8 +74,8 @@ export default function Home() {
                 <Image
                   src="/images/e2.png"
                   alt="developer"
-                  width={100}
-                  height={100}
+                  width={130}
+                  height={130}
                   quality={100}
                 />
               </div>
@@ -91,8 +91,8 @@ export default function Home() {
                 <Image
                   src="/images/e3.png"
                   alt="band"
-                  width={100}
-                  height={100}
+                  width={130}
+                  height={130}
                   quality={100}
                 />
               </div>
@@ -108,8 +108,8 @@ export default function Home() {
                 <Image
                   src="/images/e4.png"
                   alt="planning"
-                  width={100}
-                  height={100}
+                  width={130}
+                  height={130}
                   quality={100}
                 />
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
               src="/images/d1.png"
               alt="设计故事与作品展示MOMO"
               width={300}
-              height={200}
+              height={400}
               quality={100}
             />
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
               src="/images/d2.png"
               alt="设计故事与作品展示SWEET7"
               width={300}
-              height={200}
+              height={400}
               quality={100}
             />
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
               src="/images/d3.png"
               alt="设计故事与作品展示FROG"
               width={300}
-              height={200}
+              height={400}
               quality={100}
             />
           </div>
@@ -166,7 +166,7 @@ export default function Home() {
               src="/images/d4.png"
               alt="设计故事与作品展示LOOKUP"
               width={300}
-              height={200}
+              height={400}
               quality={100}
             />
           </div>

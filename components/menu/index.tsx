@@ -17,7 +17,7 @@ export const Menu: React.FC = (): React.ReactElement => {
         <Link href="/#fun4lab">FUN4 LAB</Link>
       </div>
       <div className="f4y__nav__container__menu__item f4y__nav__container__menu__item--selected">
-        野生动物园计划
+        <Link href="/zooplan">野生动物园计划</Link>
       </div>
     </div>
   );
