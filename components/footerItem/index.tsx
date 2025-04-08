@@ -7,7 +7,6 @@ export const FooterItem: React.FC<{
   desc?: React.ReactNode;
   icon?: React.ReactNode;
 }> = ({ title, url, desc, icon }) => {
-  console.log(url, '>>>>>');
   return (
     <div className="f4y__footer__container__links__item__row">
       {(desc && (

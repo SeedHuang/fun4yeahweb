@@ -13,8 +13,17 @@ export default function Home() {
       <div className="f4y__home__band" id="brand">
         <h2 className="f4y__home__band__title">品牌介绍</h2>
         <p className="f4y__home__band__desc">
-          凭借自主研发的实时串流、容器和云边协同的弹性调度等核心技术，以及覆盖全球的云算力节点、企业级的服务能力，
-          为客户打造最佳的实时互动计算体验，为元宇宙发展提供稳定基础设施和核心技术能力。
+          放肆耶 FUN4YEAH
+          <br />
+          一个为年轻人而生的、有趣的、态度鲜明的文创消费品牌。
+          <br />
+          我们专注于打造高品质、有创意、富有表达力的IP衍生品。无论是徽章、毛绒、饰品、文具，还是限定收藏品，我们都希望它不仅仅是一件商品，更是一种情绪的载体，一种个性的延伸。
+          <br />
+          “放肆”是表达的自由，“耶”是情绪的释放。
+          <br />
+          FUN4YEAH代表的是当代年轻人敢于表达、乐于分享、不被定义的生活方式。
+          <br />
+          我们相信，在快节奏与高压的日常中，每个人都需要一份有趣的出口。而我们的存在，就是为这种“有趣”赋予实体、为快乐赋能。
         </p>
         <div className="f4y__home__band__cards">
           <div className="f4y__home__band__cards__item">
