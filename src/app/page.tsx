@@ -4,11 +4,7 @@ import './page.scss';
 // import { Switch, NavBar, Checkbox, Radio, Input } from "antd-mobile";
 
 export default function Home() {
-  const srcs = [
-    '/images/poster1.png',
-    '/images/poster2.jpg',
-    '/images/poster3.jpg',
-  ];
+  const srcs = ['/images/poster1.png'];
   return (
     <div className="f4y__home" id="home">
       <div className="f4y__banner">
