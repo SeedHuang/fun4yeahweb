@@ -10,6 +10,10 @@ import './layout.scss';
 export const metadata: Metadata = {
   title: 'Fun 4 Yeah',
   description: 'Fun 4 Yeah',
+  icons: {
+    icon: '/favicon.ico', // 基本图标
+    shortcut: '/favicon.ico', // 快捷方式图标
+  },
 };
 
 export default function RootLayout({
@@ -104,7 +108,7 @@ export default function RootLayout({
               <div className="f4y__footer__container__location">
                 <div className="f4y__footer__container__location__image">
                   <Image
-                    src="/images/location.png"
+                    src="/images/location.jpg"
                     alt="Location"
                     width={386}
                     height={265}
@@ -119,7 +123,7 @@ export default function RootLayout({
                     >
                       <MdEmail size={18} color="#1A1A1A" />
                       <span className="f4y__footer__container__location__contactus__row__text">
-                        上海市黄浦区瑞金二路272号502室
+                        上海市黄浦区
                       </span>
                     </div>
                     <div
@@ -128,7 +132,7 @@ export default function RootLayout({
                     >
                       <MdLocationOn size={18} color="#1A1A1A" />
                       <span className="f4y__footer__container__location__contactus__row__text">
-                        400-8888-9999
+                        021-63300889
                       </span>
                     </div>
                     <div
@@ -137,7 +141,7 @@ export default function RootLayout({
                     >
                       <MdPhone size={18} color="#1A1A1A" />
                       <span className="f4y__footer__container__location__contactus__row__text">
-                        fei@fun4yeah.com
+                        business@fun4yeah.com
                       </span>
                     </div>
                   </div>
