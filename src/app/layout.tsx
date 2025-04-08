@@ -1,3 +1,4 @@
+import { FooterItem } from '@components/footerItem';
 import Menu from '@components/menu';
 import { type Metadata } from 'next';
 import Image from 'next/image';
@@ -13,6 +14,11 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico', // 基本图标
     shortcut: '/favicon.ico', // 快捷方式图标
+    apple: '/apple-icon.png', // iOS设备
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/apple-touch-icon-precomposed.png',
+    },
   },
 };
 
@@ -26,15 +32,6 @@ export default function RootLayout({
       <body>
         <header className="f4y__nav">
           <div className="f4y__nav__container">
-            <div className="f4y__nav__container__logobar">
-              <Image
-                className="f4y__nav__container__logobar__logo"
-                src="/images/logo.png"
-                alt="Logo"
-                width={150}
-                height={50}
-              />
-            </div>
             <Menu />
           </div>
         </header>
@@ -91,18 +88,30 @@ export default function RootLayout({
                 </div>
                 <div className="f4y__footer__container__links__item">
                   <h3>关注</h3>
-                  <div className="f4y__footer__container__links__item__row">
-                    <FaWeixin size={18} color="#fff" />
-                    <Link href="/#brand">FUN4YEAH</Link>
-                  </div>
-                  <div className="f4y__footer__container__links__item__row">
-                    <FaWeibo size={18} color="#fff" />
-                    <Link href="/#brand">FUN4YEAH</Link>
-                  </div>
-                  <div className="f4y__footer__container__links__item__row">
-                    <FaChrome size={18} color="#fff" />
-                    <Link href="/#brand">FUN4YEAH</Link>
-                  </div>
+                  <FooterItem
+                    title="FUN4YEAH"
+                    desc={
+                      <div className="f4y__footer__container__links__item__row__desc__img">
+                        <Image
+                          src="/images/wechat.jpg"
+                          alt="wechat"
+                          width={300}
+                          height={300}
+                        />
+                      </div>
+                    }
+                    icon={<FaWeixin size={18} color="#fff" />}
+                  />
+                  <FooterItem
+                    title="FUN4YEAH"
+                    url="https://weibo.com/u/7970966421"
+                    icon={<FaWeibo size={18} color="#fff" />}
+                  />
+                  <FooterItem
+                    title="FUN4YEAH"
+                    url="https://www.xiaohongshu.com/user/profile/673f38e3000000001100a585"
+                    icon={<FaChrome size={18} color="#fff" />}
+                  />
                 </div>
               </div>
               <div className="f4y__footer__container__location">
