@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const FooterItem: React.FC<{
   title: string;
   url?: string;
-  desc?: any;
+  desc?: React.ReactNode;
   icon?: React.ReactNode;
 }> = ({ title, url, desc, icon }) => {
   console.log(url, '>>>>>');
