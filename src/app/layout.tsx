@@ -56,9 +56,6 @@ export default function RootLayout({
                     <Link href="/#brand">品牌理念</Link>
                   </div>
                   <div className="f4y__footer__container__links__item__row">
-                    <Link href="/#team">团队介绍</Link>
-                  </div>
-                  <div className="f4y__footer__container__links__item__row">
                     <Link href="/#fun4lab">最新公告</Link>
                   </div>
                 </div>
